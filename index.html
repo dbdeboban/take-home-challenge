@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="burger-menu" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="content">
+        <h4 class="directory">BLog / Yoga / Living Yoga</h4>
+        <img class="cover" src="./assets/start.png" alt="cover">
+        <div class="container-1">
+            <div class="row-cont">
+                <div class="col col-1">
+                    <img class="icon" src="./assets/icon-1.png" alt="facebook">
+                    <img class="icon" src="./assets/icon-2.png" alt="facebook">
+                    <img class="icon" src="./assets/icon-3.png" alt="facebook">
+                </div>
+                <div class="col col-2">
+                    <h4 id="heading-1">Living Yoga</h4>
+                    <p id="living-yoga">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+                        magnis dis
+                        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                        pretium quis, sem. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+                        et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                        pellentesque eu, pretium quis, sem.Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                        ultricies nec, pellentesque eu, pretium quis, sem.Aenean commodo ligula eget dolor. Aenean
+                        massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Aenean commodo ligula eget
+                        dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    </p>
+                    <h6 id="heading-2">How it is to live a stress free life</h6>
+                    <p id="live-stress">
+                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                        pretium quis, sem.
+                    </p>
+                </div>
+                <div class="col col-3">
+                    <h4 id="other-Art">Other Articles</h4>
+                    <table>
+                        <tr id="row-1"></tr>
+                        <tr id="row-2"></tr>
+                        <tr id="row-3"></tr>
+                    </table>
+                    <button onclick="prevPage()" id="back"><i class="fa fa-angle-left" style="font-size: 25px;"></i>
+                        <span>&nbsp;&nbsp; BACK</span>
+                    </button>
+                    <button onclick="nextPage()">
+                        <span>NEXT&nbsp;&nbsp;</span><i class="fa fa-angle-right" style="font-size: 25px;"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="dawn"><img id="dawn-img" src="./assets/dawn-dusk-hd-wallpaper-36717 (1).png" alt="imgdawn"></div>
+            <div class="comment">
+                <hr>
+                <div id="links">
+                    <a href="" id="underline-Comm">0 Comments</a>
+                    <a href="">www.yourwebsite.com</a>
+                </div>
+                <hr>
+                <div class="container-2">
+                    <div class="row">
+                        <div class="col-4">
+                            <img id="userImg" src="./assets/image.png" alt="comm">
+                            <input type="text" id="comments" placeholder="Begin the conversation..."></input>
+                        </div>
+                    </div>
+                </div>
+                <div id="no-Comment">Be the first to comment.</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footCont">
+            <div class="footRow">
+                <div class="footColumn-1">
+                    <h5>Carolina.com</h5>
+                    <p>FOLLOW US</p>
+                </div>
+                <div class="footColumn-2">
+                    <ul>
+                        <li>About Us</li>
+                        <li>About Us</li>
+                        <li>About Us</li>
+                        <li>About Us</li>
+                        <li>About Us</li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+                <div class="footColumn-3">
+                    <ul>
+                        <li>Next Trainings</li>
+                        <li>Next Trainings</li>
+                        <li>Next Trainings</li>
+                        <li>Next Trainings</li>
+                        <li>Next Trainings</li>
+                        <li>Next Trainings</li>
+                    </ul>
+                </div>
+                <div class="footColumn-4">
+                    <p>SIGN UP FOR THE NEWSLETTER</p>
+                    <div id="signUp">
+                        <input type="email" placeholder="your@e-mail.com">
+                        <button>SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <h4 id="copyright-txt">We create for @agoodpurpose</h4>
+    </div>
+</body>
+
+<script>
+    var Data = [];
+    var count = 0;
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+
+    async function fetchData() {
+        let response = await fetch("https://picsum.photos/v2/list");
+        Data = await response.json();
+        console.log(Data);
+        nextPage();
+    }
+    fetchData();
+    function nextPage() {
+        if (count + 3 < Data.length - 1) {
+            var k = 1;
+            while (k <= 3) {
+                var str = "row-" + k
+                var row = document.getElementById(str);
+                var child = row.lastElementChild;
+                (child) ? child.remove() : console.log("noichild");
+                child = row.lastElementChild;
+                (child) ? child.remove() : console.log("noichild");
+                k++;
+            }
+            for (i = 1; i <= 3; i++) {
+                var str = "row-" + i
+                var row = document.getElementById(str);
+                if (Data[count + i]) {
+                    var img = `<img src="` + Data[count + i].download_url + `" />`;
+                    var author = `<p>` + Data[count + i].author; +`</p>`;
+                    row.insertAdjacentHTML('beforeend', "<td>" + img + "</td>");
+                    row.insertAdjacentHTML('beforeend', "<td>" + author + "</td>");
+                }
+            }
+            count += 3;
+        }
+        console.log(count);
+    }
+    function prevPage() {
+        if (count - 3 >= 3) {
+            var k = 1;
+            while (k <= 3) {
+                var str = "row-" + k;
+                var row = document.getElementById(str);
+                var child = row.lastElementChild;
+                (child) ? child.remove() : console.log("noichild");
+                child = row.lastElementChild;
+                (child) ? child.remove() : console.log("noichild");
+                k++;
+            }
+            for (i = 1, k = 3; i <= 3; i++ , k--) {
+                var str = "row-" + i
+                var row = document.getElementById(str);
+                var img = `<img src="` + Data[count - k].download_url + `" />`;
+                var author = `<p>` + Data[count - k].author; +`</p>`;
+                row.insertAdjacentHTML('beforeend', "<td>" + img + "</td>");
+                row.insertAdjacentHTML('beforeend', "<td>" + author + "</td>");
+            }
+            count -= 3;
+        }
+        console.log(count);
+    }
+
+</script>
+
+</html>

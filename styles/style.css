@@ -1,0 +1,376 @@
+body {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+.directory {
+  font-family: Open Sans;
+  font-size: 13px;
+  color: #707070;
+  margin-bottom: 5px;
+}
+.burger-menu {
+  margin-left: 90%;
+}
+.content {
+  display: block;
+  margin-top: 50px;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 30px;
+}
+.cover {
+  width: 100%;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.container-1 {
+  margin-top: 60px;
+}
+.row-cont {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-1 {
+  max-width: 40px;
+}
+.col-2 {
+  margin-left: 60px;
+  margin-right: 60px;
+  max-width: 601px;
+}
+.icon {
+  margin-bottom: 7px;
+}
+#heading-1 {
+  font-family: Roboto;
+  font-size: 32px;
+  color: #052238;
+  margin: 0px;
+}
+#heading-2 {
+  font-family: Roboto;
+  font-size: 21px;
+  line-height: 25px;
+  color: #052238;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+.col-1,
+.col-2,
+.col-3 {
+  display: block;
+}
+#live-stress,
+#living-yoga {
+  font-family: Open Sans;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #02111d;
+}
+#live-stress {
+  margin-bottom: 40px;
+}
+.col-3 {
+  flex-basis: 24%;
+  background: #052238;
+  width: 266px;
+  max-height: 370px;
+  padding: 25px;
+  margin-top: 40px;
+  margin-left: 6px;
+  text-align: center;
+}
+td p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #ffffff;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+td img {
+  width: 102px;
+  height: 70px;
+}
+td {
+  border-bottom: 15px solid #052238;
+  text-align: left;
+}
+#other-Art {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 25px;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+button {
+  font-family: Roboto;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #052238;
+  border: 0px;
+  margin-top: 20px;
+}
+button span {
+  display: inline-block;
+  vertical-align: 4px;
+}
+#back {
+  margin-right: 80px;
+}
+#dawn {
+  max-width: 750px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+#dawn-img {
+  width: 100%;
+}
+.col-4 {
+  display: flex;
+}
+#comments {
+  width: 90%;
+  padding: 15px;
+  text-align: left;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 21px;
+  color: #707070;
+}
+#userImg {
+  max-width: 55px;
+  margin-right: 15px;
+}
+.container-2 {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+#links {
+  margin-top: 25px;
+
+}
+#links a {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #052238;
+  text-decoration: none;
+  margin-right: 40px;
+  padding-bottom: 7px;
+  margin-bottom: 0px;
+}
+#underline-Comm {
+  border-bottom: 3px solid #052238;
+}
+#no-Comment {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 21px;
+  color: #707070;
+  margin-bottom: 80px;
+}
+.footer {
+  padding: 70px 100px 70px 100px;
+  background: #c8c8c81f;
+}
+.copyright {
+  padding: 15px;
+  background: #31414d;
+}
+#copyright-txt {
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  opacity: 0.81;
+  margin-left: 200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.footRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footColumn-1 {
+  margin-left: 100px;
+}
+.footColumn-1 h5 {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 21px;
+  color: #052238;
+  margin: 0px;
+}
+.footColumn-1 p {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 14px;
+  color: #052238;
+  opacity: 0.65;
+}
+.footColumn-2 {
+  margin-left: 40px;
+}
+.footColumn-2 ul {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 14px;
+  color: #052238;
+  list-style: none;
+  margin: 0px;
+}
+.footColumn-2 li {
+  margin-bottom: 20px;
+}
+.footColumn-3 {
+  margin-left: 50px;
+}
+.footColumn-3 ul {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 14px;
+  color: #052238;
+  list-style: none;
+  margin: 0px;
+}
+.footColumn-3 li {
+  margin-bottom: 20px;
+}
+.footColumn-4 {
+  margin-left: 70px;
+}
+.footColumn-4 p {
+  margin-top: 0px;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 14px;
+  color: #052238;
+}
+#signUp {
+  border: 2px solid #052238;
+  font-family: Roboto;
+}
+#signUp input {
+  border: 0px;
+  border-right: 2px solid #052238;
+  color: #0522385b;
+  padding: 7px;
+  width: 238px;
+}
+#signUp button {
+  background: transparent;
+  color: #333333;
+  margin-top: 0px;
+  padding: 7px 20px 7px 20px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .footer {
+    padding: 30px 20px 30px 20px;
+    background: #c8c8c81f;
+  }
+  .footColumn-1,
+  .footColumn-2,
+  .footColumn-3,
+  .footColumn-4 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  .footColumn-1 {
+    padding-left: 40px;
+  }
+  #signUp input {
+    width: 130px;
+  }
+  #copyright-txt {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footRow {
+    display: block;
+  }
+  .col-2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-1 {
+    max-width: 300px;
+    margin-left: 0px;
+  }
+  .col-1 img {
+    margin-right: 20px;
+  }
+  #back {
+    margin-right: 20px;
+  }
+  .burger-menu {
+    margin-left: 80%;
+  }
+  #links a{
+    padding-bottom: 0px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width:601px) and (max-width: 768px) {
+  #back {
+    margin-right: 20px;
+  }
+  .col-1 {
+    max-width: 300px;
+    margin-left: 60px;
+  }
+  .col-3 {
+    margin-left: 60px;
+  }
+  .col-1 img {
+    margin-right: 20px;
+  }
+  #signUp input {
+    width: 130px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
